@@ -2,65 +2,82 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>SIM-PEL MUTU | Majene</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM-PEL MUTU | Dinas Kesehatan Majene</title>
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .hero { background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 60px 0; }
-        .btn-simpel { background-color: #f59e0b; color: white; border-radius: 20px; }
+        .hero { background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 80px 0; }
+        .card { transition: transform 0.3s; border-radius: 15px; }
+        .card:hover { transform: scale(1.05); }
+        .btn-simpel { background-color: #f59e0b; color: white; border-radius: 20px; font-weight: bold; }
     </style>
 </head>
 <body>
+
+    <!-- Header / Hero Section -->
     <header class="hero text-center">
         <div class="container">
-            <h1 class="display-4 fw-bold">SIM-PEL MUTU</h1>
+            <h1 class="display-3 fw-bold">SIM-PEL MUTU</h1>
             <p class="lead">Sistem Informasi Pendampingan & Evaluasi Layanan Mutu</p>
             <p>Dinas Kesehatan Kabupaten Majene</p>
         </div>
     </header>
 
+    <!-- Menu Utama -->
     <main class="container my-5">
-    <div class="row g-4">
-        <!-- SIM-PEL PINTAR -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow border-0 text-center p-3">
-                <div class="card-body">
-                    <h6 class="fw-bold text-success">SIM-PEL PINTAR</h6>
-                    <small>Modul & Materi</small><br><br>
-                    <a href="https://drive.google.com/drive/folders/1gmTWQ3ObzUWWXNLGr-djuhNBnML6PHEa?usp=drive_link" class="btn btn-success btn-sm">Buka</a>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- SIM-PEL PINTAR -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow border-0 text-center p-4">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-success">SIM-PEL PINTAR</h5>
+                        <p class="text-muted">Modul, materi, dan bahan tayang narasumber.</p>
+                        <a href="#" class="btn btn-simpel w-100">Buka Materi</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- SIM-PEL MONITOR -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow border-0 text-center p-3">
-                <div class="card-body">
-                    <h6 class="fw-bold text-success">SIM-PEL MONITOR</h6>
-                    <small>Upload RTL</small><br><br>
-                    <a href="https://drive.google.com/drive/folders/1Q1YKTmh3VY-Dedp2-Q_RUVQoejEAeyYi?usp=drive_link" class="btn btn-success btn-sm">Upload</a>
+
+            <!-- SIM-PEL MONITOR -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow border-0 text-center p-4">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-success">SIM-PEL MONITOR</h5>
+                        <p class="text-muted">Download template & Upload RTL Puskesmas.</p>
+                        <a href="monitor.html" class="btn btn-simpel w-100">Buka Monitor</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- SIM-PEL EVALUASI -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow border-0 text-center p-3">
-                <div class="card-body">
-                    <h6 class="fw-bold text-success">SIM-PEL EVALUASI</h6>
-                    <small>Ceklis Lapangan</small><br><br>
-                    <a href="LINK_GOOGLE_FORM_CEKLIS" class="btn btn-success btn-sm">Isi Form</a>
+
+            <!-- SIM-PEL EVALUASI -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow border-0 text-center p-4">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-success">SIM-PEL EVALUASI</h5>
+                        <p class="text-muted">Instrumen daftar tilik evaluasi lapangan.</p>
+                        <a href="#" class="btn btn-simpel w-100">Buka Form</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- SIM-PEL KOMITMEN -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow border-0 text-center p-3">
-                <div class="card-body">
-                    <h6 class="fw-bold text-success">SIM-PEL KOMITMEN</h6>
-                    <small>Galeri Foto</small><br><br>
-                    <a href="https://drive.google.com/drive/folders/1SEPhTY5Mt-oMr3DIHhC9NUeElwAvQ8W3?usp=drive_link" class="btn btn-success btn-sm">Lihat</a>
+
+            <!-- SIM-PEL KOMITMEN -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow border-0 text-center p-4">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-success">SIM-PEL KOMITMEN</h5>
+                        <p class="text-muted">Galeri foto dan naskah komitmen bersama.</p>
+                        <a href="#" class="btn btn-simpel w-100">Lihat Galeri</a>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
-</main>
+    </main>
+
+    <footer class="text-center py-4 text-muted">
+        <small>&copy; 2026 Dinas Kesehatan Kabupaten Majene - Bidang Pelayanan & SDK</small>
+    </footer>
+
 </body>
 </html>
